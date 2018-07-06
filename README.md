@@ -17,3 +17,19 @@ execute as
 ```
 php codecept.phar
 ```
+
+See detail https://codeception.com/install
+
+##Running tests
+
+REST API test
+ ```
+ codecept run tests/api/ApiTestingCest.php
+ ```
+ 
+Acceptance test
+ ```
+ codecept run tests/appeptance/AcceptTestingCest.php
+ ```
+
+ 

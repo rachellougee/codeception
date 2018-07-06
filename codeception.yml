@@ -1,21 +1,20 @@
-actor: Tester
+suites:
+    api:
+        actor: ApiTester
+        path: .
+        modules:
+            enabled:
+                - REST:
+                    url: http://petstore.swagger.io/v2
+                    depends: PhpBrowser
+
 paths:
     tests: tests
-    log: tests/_output
+    output: tests/_output
     data: tests/_data
     support: tests/_support
     envs: tests/_envs
-settings:
-    bootstrap: _bootstrap.php
-    colors: false
-    memory_limit: 1024M
+actor_suffix: Tester
 extensions:
     enabled:
         - Codeception\Extension\RunFailed
-modules:
-    config:
-        Db:
-            dsn: ''
-            user: ''
-            password: ''
-            dump: tests/_data/dump.sql
