@@ -20,7 +20,7 @@ php codecept.phar
 
 See detail https://codeception.com/install
 
-##Running tests
+## Running test
 
 REST API test
  ```
